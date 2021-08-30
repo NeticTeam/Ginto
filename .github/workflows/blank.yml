@@ -1,0 +1,4 @@
+- name: Vuepress deploy
+  # You may pin to the exact commit or the version.
+  # uses: jenkey2011/vuepress-deploy@c125854a55a2d3fbe1847e0fc25a4aa662582520
+  uses: jenkey2011/vuepress-deploy@v1.8.1
