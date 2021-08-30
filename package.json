@@ -1,0 +1,19 @@
+{
+  "name": "GintoDocs",
+  "version": "0.0.1",
+  "description": "Documentation for Ginto API",
+  "main": "index.js",
+  "authors": {
+    "name": "corruptmemory",
+    "email": "crptmemory@gmail.com"
+  },
+  "repository": "https://github.com/NeticTeam/Ginto/GintoDocs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
