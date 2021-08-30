@@ -1,5 +1,4 @@
-
-name: A TO A:GH_PAGES
+name: Build and Deploy
 on: [push]
 jobs:
   build-and-deploy:
@@ -9,10 +8,8 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: jenkey2011/vuepress-deploy@master
+      uses: testthedocs/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: NeticTeam/Ginto
-        TARGET_BRANCH: gh_pages
-        BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: docs/.vuepress/dist
+        BUILD_DIR: docs/.vuepress/dist/test1
+        BUILD_SCRIPT: npm install && npm run-script build # The build script the action should run prior to deploying.
